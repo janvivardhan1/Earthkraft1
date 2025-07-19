@@ -580,14 +580,23 @@
 /**************************/
 
 .footer {
-  padding: 12.8rem 0;
+  /* padding: 6rem 0; */
   border-top: 1px solid #eee;
 }
 
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* color: white; */
 }
-
+.footer-head{
+  /* background-image: url(/images/earthslider/footer.jpg); */
+  background-size: cover;
+   background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+ backdrop-filter: blur(10px);
+  text-align: center;
+} 
 .logo-col {
   display: flex;
   flex-direction: column;
@@ -643,7 +652,8 @@
 .footer-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #767676;
+  /* color:#fff; */
+  color: #767676; 
   transition: all 0.3s;
 }
 

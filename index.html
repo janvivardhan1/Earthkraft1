@@ -21,7 +21,9 @@
       <link rel="stylesheet" href="/css/ushma/style.css" />
       <link rel="stylesheet" href="/css/ushma/queries.css" />
       <link rel="stylesheet" href="/css/ushma/vegas.min.css" />
+      
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+      <!-- <link rel="stylesheet" href="/css/earthkraft/user.css"> -->
       <link rel="stylesheet" href="/css/earthkraft/general.css">
       <script
          type="module"
@@ -56,7 +58,55 @@
                   <li><a class="main-nav-link" href="#">About Us</a></li>
                   <li><a class="main-nav-link" href="#">Contact Us</a></li>
                   <li><a class="main-nav-link" href="#">Event & News</a></li>
-                  <li><a class="main-nav-link nav-cta" href="#">Login</a></li>
+                  <!-- <li><a class="main-nav-link nav-cta" href="#"></a></li> -->
+                   <div class="navbar">
+                       <div class="profile-dropdown">
+                      <i class="fas fa-user-circle profile-icon"></i>
+                      <div class="dropdown-menu">
+                     <a href="/Views/user/login.html" id="open-login">Login</a>
+                      <a href="/Views/user/registration.html" id="open-register">Registration</a>
+                    </div>
+                   </div>
+                </div>
+
+                 <!-- Login Modal -->
+                <!-- <div class="modal" id="login-modal">
+                   <div class="modal-content">
+                 <span class="close" onclick="closeModal('login-modal')">&times;</span>
+                 <h2>Login</h2>
+                <form>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+               <button type="submit">Login</button>
+               </form>
+                 </div>
+                </div> -->
+
+               <!-- Registration Modal -->
+                 <!-- <div class="modal" id="register-modal">
+                 <div class="modal-content">
+                  <span class="close" onclick="closeModal('register-modal')">&times;</span>
+                 <h2>Register</h2>
+                <form>
+                 <input type="text" placeholder="Full Name" required />
+                 <input type="email" placeholder="Email" required />
+                 <input type="password" placeholder="Password" required />
+                 <input type="password" placeholder="Confirm Password" required />
+                 <button type="submit">Register</button>
+               </form>
+             </div>
+            </div> -->
+        <div class="nav-icons">
+        <div class="dropdown">
+          <button class="dropbtn">
+         <ion-icon name="language-outline"></ion-icon>
+         </button>
+        <div class="dropdown-content">
+        <a href="#"><strong>English</strong></a>
+        <a href="#"><strong>हिन्दी</strong></a>
+        </div>
+       </div>
+       </div>
                </ul>
             </nav>
             <button class="btn-mobile-nav">
@@ -64,10 +114,9 @@
                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
             </button>
          </header>
-          
-
-<main>
-   <section class="section-hero slider">
+         
+     <main>
+      <section class="section-hero slider">
       <div class="hero">
          <div class="hero-text-box">
             <!-- <img
@@ -415,7 +464,7 @@
             <div
                class="cta-img-box"
                role="img"
-               aria-label="Woman enjoying food"
+               aria-label="industry"
                ></div>
          </div>
       </div>
@@ -430,12 +479,23 @@
            });
        </script>
 
+       <section class="partners">
+    <h2>Our Partners</h2>
+    <div class="partner-logos">
+      <img src="/images/earthslider/microsoft.jpg" alt="Microsoft">
+      <img src="/images/earthslider/dynamics.jpg" alt="Dynamics">
+      <img src="/images/earthslider/ibm.jpg" alt="IBM">
+      <img src="/images/earthslider/qlikview.jpg" alt="QlikView">
+    </div>
+  </section>
+
 
 </main> 
 
            <footer class="footer">
+            <div class="footer-head">
          <div class="container grid grid--footer">
-            <div class="logo-col">
+            <!-- <div class="logo-col">
                <a href="#" class="footer-logo">
                <img
                   class="logo"
@@ -466,10 +526,34 @@
                      </a>
                   </li>
                </ul>
+               <br>
+               <ul class="social-links">
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+                           >
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-youtube"></ion-icon
+                           >
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+                           >
+                     </a>
+                  </li>
+               </ul>
                <p class="copyright">
                   Copyright &copy; 2025 by EarthKraft Network.  All rights reserved.
                </p>
-            </div>
+            </div> -->
             <div class="address-col">
                <p class="footer-heading">Contact us</p>
                <address class="contacts">
@@ -492,6 +576,7 @@
                   <li><a class="footer-link" href="#">Create account</a></li>
                   <li><a class="footer-link" href="#">Sign in</a></li>
                   <li><a class="footer-link" href="#">Request Demo</a></li>
+              
                </ul>
             </nav>
             <nav class="nav-col">
@@ -505,6 +590,16 @@
                </ul>
             </nav>
             <nav class="nav-col">
+               <p class="footer-heading">Data & AI</p>
+               <ul class="footer-nav">
+                  <li><a class="footer-link" href="#">Oneview</a></li>
+                  <li><a class="footer-link" href="#">Master Data Mgmt</a></li>
+                  <li><a class="footer-link" href="#">Virtual Pipeline</a></li>
+                  <li><a class="footer-link" href="#">Analytics</a></li>
+                  <li><a class="footer-link" href="#">Outsourcing</a></li>
+               </ul>
+            </nav>
+            <nav class="nav-col">
                <p class="footer-heading">Resources</p>
                <ul class="footer-nav">
                   <li><a class="footer-link" href="#">Services </a></li>
@@ -514,9 +609,66 @@
                </ul>
             </nav>
          </div>
+         </div>
+         <div class="footer-bottom ">
+         <p class="container copyright">&copy; 2025 EarthKraft. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+        <!-- <div class="socials">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-vimeo"></i></a>
+      </div> -->
+      <ul class="social-links container">
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                           >
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                           >
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                           >
+                     </a>
+                  </li>
+                   <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+                           >
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-youtube"></ion-icon
+                           >
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon whatsapp" name="logo-whatsapp"></ion-icon
+                           >
+                     </a>
+                  </li>
+               </ul>
+    </div>
+
       </footer>
       <script src="/js/ushma/jquery-3.1.0.min.js"></script>
       <script src="/js/ushma/vegas.min.js"></script>
       <script src="/js/ushma/script.js"></script>
+       <script src="/js/earthkraft/user.js"></script>
+
    </body>
 </html>

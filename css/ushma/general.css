@@ -106,6 +106,7 @@ body {
 } */
 
 .grid:not(:last-child) {
+  margin-top: 3rem;
   margin-bottom: 9.6rem;
 }
 

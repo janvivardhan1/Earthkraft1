@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- Always include this line of code!!! -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <!-- Include Font Awesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+         />
+      <link rel="stylesheet" href="/css/ushma/general.css" />
+      <link rel="stylesheet" href="/css/ushma/style.css" />
+      <link rel="stylesheet" href="/css/ushma/queries.css" />
+      <link rel="stylesheet" href="/css/ushma/vegas.min.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+      <link rel="stylesheet" href="/css/earthkraft/user.css">
+      <link rel="stylesheet" href="/css/earthkraft/general.css">
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+         ></script>
+      <script
+         nomodule=""
+         src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+         ></script>
+         <link rel="icon" href="images/logo.png">
+      <title>Earth Kraft</title>
+   </head>
+    <body>
+      <div id="navbar" >
+         <header class="header" style="display: flex; justify-content: center; top: 0; width: 100%;">
+            <a href="#">
+            <img
+               class="logo"
+               alt="earthkraft logo"
+               src="/images/logo.png"
+               />
+            </a>
+            
+            <nav class="main-nav">
+               <ul class="main-nav-list">
+                  <li><a class="main-nav-link" href="#">Home</a></li>
+                  <li>
+                     <a class="main-nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li><a class="main-nav-link" href="#">Case Studies</a></li>
+                  <li><a class="main-nav-link" href="#">ERP</a></li>
+                  <li><a class="main-nav-link" href="#">About Us</a></li>
+                  <li><a class="main-nav-link" href="#">Contact Us</a></li>
+                  <li><a class="main-nav-link" href="#">Event & News</a></li>
+                  <!-- <li><a class="main-nav-link nav-cta" href="#"></a></li> -->
+                   <div class="navbar">
+                       <div class="profile-dropdown">
+                      <i class="fas fa-user-circle profile-icon"></i>
+                      <div class="dropdown-menu">
+                     <a href="/Views/user/login.html" id="open-login">Login</a>
+                      <a href="/Views/user/login.html" id="open-register">Registration</a>
+                    </div>
+                   </div>
+                </div>
+                 <div class="nav-icons">
+        <div class="dropdown">
+          <button class="dropbtn">
+         <ion-icon name="language-outline"></ion-icon>
+         </button>
+        <div class="dropdown-content">
+        <a href="#"><strong>English</strong></a>
+        <a href="#"><strong>हिन्दी</strong></a>
+        </div>
+       </div>
+       </div>
+               </ul>
+            </nav>
+            <button class="btn-mobile-nav">
+               <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+               <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            </button>
+         </header>
+         </div>
+          <section class="section-cta">
+      <div class="container">
+         <div class="cta">
+            <div class="cta-text-box">
+               <h2 class="heading-secondary">Create account:</h2>
+               <form class="cta-form" action="#">
+                  <div  >
+                     <label for="name" >Full name</label>
+                     <input
+                        id="name"
+                        type="text"
+                        placeholder="John smith"
+                        required
+                        />
+                  </div>
+                  <div  >
+                     <label for="email" >Email address</label>
+                     <input
+                        id="email"
+                        type="email"
+                        placeholder="me@example.com"
+                       
+                        required
+                        />
+                  </div>
+      
+                  <div>
+                     <label for="password">Password</label>
+                     <input
+                        id="password"
+                        type="password"
+                        placeholder="Enter your password"
+                        required
+                        />
+                  </div>
+   
+                   <div>
+                     <label for="password"> Confirm Password</label>
+                     <input
+                        id="confirm-password"
+                        type="password"
+                        placeholder="Re-Enter your password"
+                        required
+                        />
+                  </div>
+                  
+                  <button class="btn btn--form">Register</button>
+                  <!-- <input type="checkbox" />
+                     <input type="number" /> -->
+              </form>
+            </div>
+            <div
+               class="cta-img-box"
+               role="img"
+               aria-label="industry"
+               ></div>
+         </div>
+         </div> 
+         </section>
+
+ <!-- <div class="modal-content" id="login-modal">
+ <div class="register-container">
+    <h2>Create Account</h2>
+    <form action="#">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="John Smith" required />
+
+      <label for="email">Email address</label>
+      <input type="email" id="email" placeholder="me@example.com" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Create a password" required />
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" placeholder="Re-enter your password" required />
+
+      <button type="submit">Register</button>
+    </form>
+    <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  </div>  -->
+  <div id="footer">
+<footer class="footer" >
+            <div class="footer-head">
+         <div class="container grid grid--footer">
+          
+            <div class="address-col">
+               <p class="footer-heading">Contact us</p>
+               <address class="contacts">
+                  <p class="address">
+                     Himalayan Tower, Mall Road, Shimla
+                     Himachal Pradesh, India – 171001
+                  </p>
+                  <p>
+                     <a class="footer-link" href="tel:415-201-6370">xxx-xxx-6370</a
+                        ><br />
+                     <a class="footer-link" href="mailto:hello@ushmawellness.com"
+                        >hello@EarthKraft.com</a
+                        >
+                  </p>
+               </address>
+            </div>
+            <nav class="nav-col">
+               <p class="footer-heading">Account</p>
+               <ul class="footer-nav">
+                  <li><a class="footer-link" href="#">Create account</a></li>
+                  <li><a class="footer-link" href="#">Sign in</a></li>
+                  <li><a class="footer-link" href="#">Request Demo</a></li>
+              
+               </ul>
+            </nav>
+            <nav class="nav-col">
+               <p class="footer-heading">About EarthKraft</p>
+               <ul class="footer-nav">
+                  <li><a class="footer-link" href="#">Who We Are</a></li>
+                  <li><a class="footer-link" href="#">Our Team</a></li>
+                  <li><a class="footer-link" href="#">Our Case Studies</a></li>
+                  <li><a class="footer-link" href="#">Partner with us</a></li>
+                  <li><a class="footer-link" href="#">Careers</a></li>
+               </ul>
+            </nav>
+            <nav class="nav-col">
+               <p class="footer-heading">Data & AI</p>
+               <ul class="footer-nav">
+                  <li><a class="footer-link" href="#">Oneview</a></li>
+                  <li><a class="footer-link" href="#">Master Data Mgmt</a></li>
+                  <li><a class="footer-link" href="#">Virtual Pipeline</a></li>
+                  <li><a class="footer-link" href="#">Analytics</a></li>
+                  <li><a class="footer-link" href="#">Outsourcing</a></li>
+               </ul>
+            </nav>
+            <nav class="nav-col">
+               <p class="footer-heading">Resources</p>
+               <ul class="footer-nav">
+                  <li><a class="footer-link" href="#">Services </a></li>
+                  <li><a class="footer-link" href="#">Benefits</a></li>
+                  <li><a class="footer-link" href="#">Data & eGovernance</a></li>
+                  <li><a class="footer-link" href="#">Privacy & terms</a></li>
+               </ul>
+            </nav>
+         </div>
+         </div>
+         <div class="footer-bottom ">
+         <p class="container copyright">&copy; 2025 EarthKraft. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+      <ul class="social-links container">
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                           >
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                           >
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                           >
+                     </a>
+                  </li>
+                   <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+                           >
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon" name="logo-youtube"></ion-icon
+                           >
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-link" href="#"
+                        >
+                        <ion-icon class="social-icon whatsapp" name="logo-whatsapp"></ion-icon
+                           >
+                     </a>
+                  </li>
+               </ul>
+    </div>
+
+      </footer>
+      </div>
+   <script>
+    window.onload = function () {
+    // Load navbar
+    fetch("/Views/includes/navbar.html")
+      .then(res => res.text())
+      .then(data => {document.getElementById("navbar").innerHTML = data;
+    });
+
+    // Load footer
+    fetch("/Views/includes/footer.html")
+      .then(res => res.text())
+      .then(data => {document.getElementById("footer").innerHTML = data;});
+  };
+  </script>
+  <script src="/js/earthkraft/user.js"></script>
+</body>
+</html>
+
+</html>
