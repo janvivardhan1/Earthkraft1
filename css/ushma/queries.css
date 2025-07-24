@@ -16,6 +16,11 @@
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  .case-nav-list{
+    flex-wrap: wrap;
+    row-gap: 4rem;
+  }
+
 }
 
 /**************************/
@@ -116,6 +121,9 @@
   .cta-form {
     grid-template-columns: 1fr;
   }
+  .login-form{
+    grid-template-columns: 1fr;
+  }
 
   .btn--form {
     margin-top: 1.2rem;
@@ -178,7 +186,24 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+   .case-nav-div{
+   width:25rem;
+   padding: 2rem;
+   padding-bottom: 4rem;
+  }
+  
 }
+
+
+/**************************/
+/* BELOW 776px (Smaller tablets) */
+/**************************/
+@media (max-width: 48em) {
+   .grid-erp,.grid-mob{
+    grid-template-columns: repeat(1,1fr);
+   }
+}
+
 
 /**************************/
 /* BELOW 704px (Smaller tablets) */
@@ -203,9 +228,10 @@
     width: 100%;
   }
 
-  .grid--footer {
-    grid-template-columns: repeat(6, 1fr);
-  }
+  .footer-head {
+    grid-template-columns:1fr 1fr 1fr !important;
+    }
+
 
   .logo-col,
   .address-col {
@@ -280,6 +306,7 @@
   .cta {
     grid-template-columns: 1fr;
   }
+  
 
   .cta-text-box {
     padding: 3.2rem;
@@ -290,6 +317,7 @@
     grid-row: 1;
   }
 }
+
 
 /* 
 - Font sizes (px)

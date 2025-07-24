@@ -28,7 +28,8 @@
  /* partner */
 
 .partners {
- padding-bottom: 40px;
+ padding-top: 12.8rem;
+ padding-bottom: 12.8rem;
   text-align: center;
   background: #f9f9f9;
   
@@ -73,18 +74,15 @@
     border: #d8a370 3px solid;
 }
 
-.profile-dropdown {
+/* .profile-dropdown {
   position: relative;
-}
+} */
 .profile-icon {
   font-size: 1.8rem;
   color: white;
   cursor: pointer;
 }
-.translator{
-    font-size: 1.8rem;
-   color: white;
-}
+
 .dropdown-menu , .dropdown-content {
   position: absolute;
   top: 45px;
@@ -92,11 +90,11 @@
   background: #fff4e6;
   border: 1px solid #d8a370;
   border-radius: 6px;
-  display: none;
+  display:none;
   flex-direction: column;
   width: 160px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  z-index: 1000;
 }
 
 .dropdown-menu a {
@@ -132,7 +130,7 @@
   justify-content: center;
 }
 
-.dropdown {
+.dropdown,.profile-dropdown {
   position: relative;
   display: inline-block;
 }

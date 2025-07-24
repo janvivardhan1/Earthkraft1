@@ -39,25 +39,25 @@
     <body>
         </div>
          <header class="header">
-            <a href="#">
+            <a href="#" style="display: flex; text-decoration: none; align-items: center; ">
             <img
                class="logo"
                alt="earthkraft logo"
                src="/images/logo.png"
-               />
+               /><span><h2 style="margin: 0; color: #545454; margin-left: 8px;">Earthkraft</h2></span>
             </a>
             
             <nav class="main-nav">
                <ul class="main-nav-list">
-                  <li><a class="main-nav-link" href="#">Home</a></li>
+                  <li><a class="main-nav-link" href="/index.html">Home</a></li>
                   <li>
-                     <a class="main-nav-link" href="#">Contact Us</a>
+                     <a class="main-nav-link" href="/Views/pages/data_and_ai.html">Data & AI</a>
                   </li>
-                  <li><a class="main-nav-link" href="#">Case Studies</a></li>
-                  <li><a class="main-nav-link" href="#">ERP</a></li>
-                  <li><a class="main-nav-link" href="#">About Us</a></li>
-                  <li><a class="main-nav-link" href="#">Contact Us</a></li>
-                  <li><a class="main-nav-link" href="#">Event & News</a></li>
+                  <li><a class="main-nav-link" href="/Views/pages/erp.html">ERP</a></li>
+                  <li><a class="main-nav-link" href="/Views/pages/casestudies.html">Case Studies</a></li>
+                  <li><a class="main-nav-link" href="#aboutus">About Us</a></li>
+                  <li><a class="main-nav-link" href="#contact">Contact Us</a></li>
+                  <li><a class="main-nav-link" href="/Views/pages/mobileapplication.html">Mobile Application</a></li>
                   <!-- <li><a class="main-nav-link nav-cta" href="#"></a></li> -->
                    <div class="navbar">
                        <div class="profile-dropdown">
@@ -68,34 +68,6 @@
                     </div>
                    </div>
                 </div>
-
-                 <!-- Login Modal -->
-                <!-- <div class="modal" id="login-modal">
-                   <div class="modal-content">
-                 <span class="close" onclick="closeModal('login-modal')">&times;</span>
-                 <h2>Login</h2>
-                <form>
-                <input type="email" placeholder="Email" required />
-                <input type="password" placeholder="Password" required />
-               <button type="submit">Login</button>
-               </form>
-                 </div>
-                </div> -->
-
-               <!-- Registration Modal -->
-                 <!-- <div class="modal" id="register-modal">
-                 <div class="modal-content">
-                  <span class="close" onclick="closeModal('register-modal')">&times;</span>
-                 <h2>Register</h2>
-                <form>
-                 <input type="text" placeholder="Full Name" required />
-                 <input type="email" placeholder="Email" required />
-                 <input type="password" placeholder="Password" required />
-                 <input type="password" placeholder="Confirm Password" required />
-                 <button type="submit">Register</button>
-               </form>
-             </div>
-            </div> -->
         <div class="nav-icons">
         <div class="dropdown">
           <button class="dropbtn">
@@ -107,8 +79,8 @@
         </div>
        </div>
        </div>
-               </ul>
-            </nav>
+      </ul>
+      </nav>
             <button class="btn-mobile-nav">
                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
@@ -128,8 +100,8 @@
             <p class="hero-description">
                Empowering Success Through Smart Solutions.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm">Login Here</a>
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="/Views/user/login.html" class="btn btn--full margin-right-sm" >Login Here</a>
+            <a href="#aboutus" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
                <div class="delivered-imgs">
                   <img
@@ -163,40 +135,7 @@
       </div>
    </section>
 
-     <!-- <section>
-       <div class="container">
-          <form:form method="POST" modelAttribute="bookForm" action="#" class="cta-form-book-hotel meal">
-             <div><h1 class="heading-book-hotel">Empowering Success Through Smart Solutions</h1></div>
-              <div class="dates-grid"><label class="sub-heading-book-hotel" for="checkInOutDate">Our clients achieve remarkable growth and efficiency through our tailored ERP, AI, and data-driven solutions</label>
-              <spring:bind path="checkIncheckOut">
-                  <div class="${status.error ? 'has-error' : ''}">
-                  <form:input type="text" autocomplete="off" onfocus="this.removeAttribute('readonly');" path="checkIncheckOut" name="checkIncheckOut" placeholder="Select Booking Dates"  id="checkInOutDate"  required="true"></form:input>
-                  <form:errors  path="checkIncheckOut"></form:errors>
-                  </div>
-              </spring:bind>
-              <br><br>
-              <button type="submit" class="btn btn--full margin-right-sm">Explore Now...</button>
-              <input type="hidden"  name="${_csrf.parameterName}"   value="${_csrf.token}"/>
-              <c:remove var="successMessage" scope="session" />
-             </div>
-          </form:form>
-       </div>
 
-    </section> -->
-
-   
-   <!-- <section class="section-featured">
-      <div class="container">
-         <h2 class="heading-featured-in">Featured in</h2>
-         <div class="logos">
-            <img src="/images/ushma/logos/TripAdvisor.png" alt="Trip Advisor logo" />
-            <img src="/images/ushma/logos/Makemytrip.png" alt="Make My Trip Logo" />
-            <img src="/images/ushma/logos/Trip.com.png" alt="Trip Logo" />
-            <img src="/images/ushma/logos/Agoda.png" alt="Agora logo" />
-            <img src="/images/ushma/logos/Thomas.jpg" alt="Thomas Cook logo" />
-         </div>
-      </div>
-   </section> -->
 
    <!-- services and solutions -->
     <section
@@ -251,10 +190,12 @@
    </p>
    </div>
    <div class="feature">
+   <!-- <a href="/Views/mylab/lab.html"> -->
    <ion-icon class="feature-icon" name="flask-outline"></ion-icon>
    <p class="feature-title"> Lab Management </p>
    <p class="feature-text">treamline lab operations with secure, automated workflows.
    </p>
+   <!-- </a> -->
    </div>
    <div class="feature">
    <ion-icon class="feature-icon" name="globe-outline"></ion-icon>
@@ -265,62 +206,7 @@
 
    </div>
    </section>
-   <!-- solutions and services-->
-   <!-- <section
-      class="container text-center"
-      style="padding: 10px; margin-top: 60px"
-      >
-      <span class="subheading center-text">OUR SERVICES & SOLUTIONS</span>
-      <h2 class="heading-secondary center-text" style="color: #545454">
-         Transforming Industries with Innovation
-      </h2>
-      <div class="grid grid--2-cols"> -->
-         <!-- services-->
-         <!-- <div class="scroll-container">
-            <div class="homes">
-               <div class="home">
-                  <img
-                     src="/images/ushma/events/event-food.jpg"
-                     alt="House 1"
-                     class="home__img"
-                     />
-                  <h5 class="home__name">Innovative Tech Solutions</h5>
-               </div>
-            </div>
-         </div> -->
-         <!-- services grid -->
-         <!-- <div
-            class="marquee-container"
-            style="margin: 8rem 0; background-color: #FFF;"
-            >
-            <div>
-               <h2 class="heading">OUR SERVICES & SOLUTIONS</h2>
-            </div>
-            <div class="marquee">
-               <div class="event">
-               <h5 class="event__name">Data & AI Solutions</h5>
-                  <p class="event__details">Unlock insights and automation using intelligent data tools.</p>
-               </div>
-               <div class="event">
-                  <h5 class="event__name">eGovernance Services</h5>
-                  <p class="event__details">Digital transformation strategies for smart governance.</p>
-               </div>
-               <div class="event">
-                  <h5 class="event__name">ERP Implementation </h5>
-                  <p class="event__details">Streamline business operations with tailored ERP solutions. </p>
-               </div>
-               <div class="event">
-                  <h5 class="event__name">Business Consulting</h5>
-                  <p class="event__details">Strategic guidance for digital growth and operational excellence.</p>
-               </div>
-               <div class="event">
-                  <h5 class="event__name">Case Studies </h5>
-                  <p class="event__details">Real-world success stories demonstrating our impactful work.</p>
-               </div>
-            </div>
-         </div>
-   </section> -->
-   <!-- services End-->
+
    <section class="section-meals">
    <div class="container center-text">
    <h2 class="heading-secondary" style="color: #545454">
@@ -386,13 +272,13 @@
    <h3 class="heading-tertiary" style="color: #545454">Important Links...</h3>
    <ul class="list">
    <li class="list-item">
-   <i class="fa-solid fa-square-poll-vertical"></i> <a href="#">Data & AI</a>
+   <i class="fa-solid fa-square-poll-vertical"></i> <a href="/Views/pages/data_and_ai.html">Data & AI</a>
    </li>
    <li class="list-item">
    <i class="fa-solid fa-vial"></i></i> <a href="#">Labs & Analytics</a>
    </li>
    <li class="list-item">
-   <i class="fa-solid fa-book-open"></i><a href="#">Case Study</a>
+   <i class="fa-solid fa-book-open"></i><a href="/Views/pages/casestudies.html">Case Study</a>
    </li>
    <li class="list-item">
    <i class="fa-solid fa-rss"></i><a href="#">eGovernance</a>
@@ -404,10 +290,10 @@
    </li>
    <li class="list-item">
     
-    <i class="fa-solid fa-phone"></i> <a href="#">Contact Us</a>
+    <i class="fa-solid fa-phone"></i> <a href="#contact">Contact Us</a>
    </li>
    <li class="list-item">
-   <i class="fa-solid fa-address-card"></i><a href="#">About Us</a>
+   <i class="fa-solid fa-address-card"></i><a href="#aboutus">About Us</a>
    </li>
    <li class="list-item">
    <i class="fa-solid fa-lock"></i><a href="#">Terms & Privacy"</a>
@@ -415,10 +301,12 @@
    </ul>
    </div>
    </div>
-   
    </section>
 
-   <section class="section-cta">
+    
+    
+
+   <section class="section-cta" id="contact">
       <div class="container">
          <div class="cta">
             <div class="cta-text-box">
@@ -479,7 +367,48 @@
            });
        </script>
 
-       <section class="partners">
+    <section id="aboutus" class="about-us">
+           <h2 class="heading-secondary center-text" style="color: #545454">
+          About us
+      </h2>
+    
+         <div class="container grid grid--5-cols">
+              <div class="feature">
+            <ion-icon name="school-outline" class="about-icon"></ion-icon>
+           <p class="feature-title">Who we are</p>
+            <p class="feature-text">
+            Get to know about our company
+           </p>
+           </div>
+              <div class="feature">
+            <ion-icon  name="people-outline"class="about-icon"></ion-icon>
+           <p class="feature-title">Our Team</p>
+            <p class="feature-text">
+            Meet the people behind our success
+           </p>
+           </div>
+          
+              <div class="feature">
+            <ion-icon  name="newspaper-outline"class="about-icon"></ion-icon>
+           <p class="feature-title">Events & News</p>
+            <p class="feature-text">
+           Discover what is new and what is next
+           </p>
+           </div>
+          
+              <div class="feature">
+            <ion-icon  name="ribbon-outline" class="about-icon"></ion-icon>
+           <p class="feature-title">career</p>
+            <p class="feature-text">
+           Your next big opportunity starts here
+           </p>
+           </div>
+           </div>
+  </section>
+     
+
+
+       <!-- <section class="partners">
     <h2>Our Partners</h2>
     <div class="partner-logos">
       <img src="/images/earthslider/microsoft.jpg" alt="Microsoft">
@@ -487,7 +416,7 @@
       <img src="/images/earthslider/ibm.jpg" alt="IBM">
       <img src="/images/earthslider/qlikview.jpg" alt="QlikView">
     </div>
-  </section>
+  </section> -->
 
 
 </main> 
@@ -495,65 +424,6 @@
            <footer class="footer">
             <div class="footer-head">
          <div class="container grid grid--footer">
-            <!-- <div class="logo-col">
-               <a href="#" class="footer-logo">
-               <img
-                  class="logo"
-                  alt="earthkraft logo"
-                  src="/images/logo.png"
-                  />
-               </a>
-               <ul class="social-links">
-                  <li>
-                     <a class="footer-link" href="#"
-                        >
-                        <ion-icon class="social-icon" name="logo-instagram"></ion-icon
-                           >
-                     </a>
-                  </li>
-                  <li>
-                     <a class="footer-link" href="#"
-                        >
-                        <ion-icon class="social-icon" name="logo-facebook"></ion-icon
-                           >
-                     </a>
-                  </li>
-                  <li>
-                     <a class="footer-link" href="#"
-                        >
-                        <ion-icon class="social-icon" name="logo-twitter"></ion-icon
-                           >
-                     </a>
-                  </li>
-               </ul>
-               <br>
-               <ul class="social-links">
-                  <li>
-                     <a class="footer-link" href="#"
-                        >
-                        <ion-icon class="social-icon" name="logo-linkedin"></ion-icon
-                           >
-                     </a>
-                  </li>
-                  <li>
-                     <a class="footer-link" href="#"
-                        >
-                        <ion-icon class="social-icon" name="logo-youtube"></ion-icon
-                           >
-                     </a>
-                  </li>
-                  <li>
-                     <a class="footer-link" href="#"
-                        >
-                        <ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
-                           >
-                     </a>
-                  </li>
-               </ul>
-               <p class="copyright">
-                  Copyright &copy; 2025 by EarthKraft Network.  All rights reserved.
-               </p>
-            </div> -->
             <div class="address-col">
                <p class="footer-heading">Contact us</p>
                <address class="contacts">

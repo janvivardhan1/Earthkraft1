@@ -463,7 +463,10 @@
   text-align: center;
 }
 
-
+.feature a{
+  text-decoration: none;
+  color: #555;
+}
 
 .feature-icon {
   color: #e67e22;
@@ -545,7 +548,11 @@
   column-gap: 3.2rem;
   row-gap: 2.4rem;
 }
-
+.login-form{
+ display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2.4rem;
+}
 .cta-form label {
   display: block;
   font-size: 1.6rem;
@@ -993,16 +1000,16 @@ font-weight: 500;
 
 }
 
-.cta-login-img-box{
+/* .cta-login-img-box{
   background-image: linear-gradient(
       to right bottom,
       rgba(235, 151, 78, 0.35),
       rgba(230, 125, 34, 0.35)
     ),
-    url("/resources/images/ushma/contact.jpg");
+    url("/images/general/login.jpg");
   background-size: cover;
   background-position: center;
-}
+} */
 
 
 .cta-form-login {
@@ -1042,21 +1049,32 @@ font-weight: 500;
 }
 
 .backgrad{
-
+  border: 0.5px solid 
+    #cf711f;
   overflow: hidden;
+  
+  }
+  .backgrad img{
+     width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   }
 
   .backloggrad{
-
+/* 
    background-image:
-     url("/resources/images/ushma/login.jpg");
+     url("/images/general/login.jpg"); */
     background-size: cover;
     background-position: center;
+    border: 0.5px solid 
+    #cf711f;
+    background-color: #ffd9b3;
   }
 
   .backgrad_reg{
    background-image:
-       url("/resources/images/ushma/registration.jpg");
+       url("/images/ushma/registration.jpg");
       background-size: cover;
       background-position: center;
   }
@@ -1068,3 +1086,228 @@ font-weight: 500;
     margin-bottom: 1.2rem;
 
   }
+  
+
+  /* about page */
+
+  .about-icon{
+    border: 1px solid #cf711f;
+    height: 4.2rem;
+    width: 4.2rem;
+    color: #e67e22;
+    border-radius: 50%;
+    padding: 1.6rem;
+    /* margin: 2rem; */
+    margin-bottom: 2rem;
+  }
+  .about-icon:hover{
+    background-color: #fdf2e9;
+  }
+  .about-us{
+    padding-bottom: 12.8rem;
+  }
+
+  /* data and ai */
+  .ai-img{
+    border: 0.5px solid 
+    #cf711f;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 50vh;
+ margin-bottom: 2rem;
+  }
+
+  .ai-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+   /* filter: blur(2px); */
+  
+  }
+   .head-txt{
+    padding: 2rem ; 
+
+   }
+  .ai-dec{
+    overflow: hidden;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+     border-radius: 5px;
+     border: 0.5px solid 
+    #cf711f;
+    padding-top: 2rem;
+    cursor: pointer;
+  }
+  .ai-txt{
+    padding-top: 4rem;
+    text-align: center;
+    /* padding: 2rem ; */
+  }
+   .data_ai{
+    display: flex;
+    align-items: center;
+    border: 0.5px solid 
+    #cf711f;
+    /* margin: 2rem; */
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    padding: 2rem;
+    border-radius: 5px;
+    transition: all 0.4s;
+    cursor: pointer;
+    flex-direction: column;
+   }
+   .data-icon{
+  /* color: #e67e22;            
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 2.2rem;
+  padding: 1.6rem;
+  border-radius: 50%; */
+  border: 1px solid #cf711f;
+    height: 4.2rem;
+    width: 4.2rem;
+    color: #e67e22;
+    border-radius: 50%;
+    padding: 1.6rem;
+    /* margin: 2rem; */
+    margin-bottom: 2rem;
+   }
+
+   .data-icon:hover{
+    background-color: #fdf2e9;
+  }
+
+   .data_left{
+
+    height: 150px;
+    width:200px;
+    width: 100%;
+    display: block;       /* Ensures it behaves like a block element */
+   text-align: center;     /* Optional: left-align text */
+   padding: 10px;        /* Add spacing inside the box */
+   box-sizing: border-box;
+   }
+   .data_ai:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  margin: 0;
+}
+.ai-dec:hover{
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+
+.ai-img:hover{
+transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+/* case study */
+.case-header img{
+  width: 100%;
+  height: 350px;
+  background-image: url(/images/general/casestudy.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.text-overlay{
+  position: absolute;
+  top:25%;
+  left:50%;
+  color: #000;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 30px;
+}
+.case-nav-list{
+  display: flex;
+  align-items: center;
+  margin: 3rem 4rem 5rem 4rem;
+}
+.case-nav-link{
+  text-decoration: none;
+  font-size: 24px;
+  color: #545454;
+}
+.case-nav-div{
+  height:4rem;
+  width:20rem;
+  border: 2px solid #cf711f;
+  margin: 1rem;
+  text-align: center;
+  padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+  border-radius: 5px;
+}
+.case-nav-div:hover{
+  background-color: #e67e22;
+}
+
+
+.erp-img,.mob-img{
+    border: 0.5px solid 
+    #cf711f;
+  overflow: hidden;
+  border-radius: 5px;
+  
+  }
+
+  .erp-img img,.mob-img img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  }
+
+  /* erp styling */
+  .data_erp{
+    display: flex;
+    align-items: center;
+    border: 0.5px solid 
+    #cf711f;
+    margin: 2rem;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    padding: 2rem;
+    border-radius: 5px;
+    transition: all 0.4s;
+    cursor: pointer;
+    /* flex-direction: column; */
+  }
+  .erp_left{
+   height: 200px;
+   width:250px;
+  
+    display: block;       /* Ensures it behaves like a block element */
+   text-align: left;     /* Optional: left-align text */
+   padding: 10px;        /* Add spacing inside the box */
+   box-sizing: border-box;
+  }
+  .data_erp:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  margin: 0;
+}
+.erp-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.erp-img{
+   border: 0.5px solid 
+    #cf711f;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 50vh;
+ margin-bottom: 2rem;
+}
+.erp-overlay{
+  position: absolute;
+  top:50%;
+  left:50%;
+  color: #000;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 30px;
+}

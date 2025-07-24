@@ -112,6 +112,7 @@ body {
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+ 
 }
 
 /* .grid--2-cols--60-40 {
@@ -126,9 +127,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* .grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
-} */
+.grid--5-cols {
+  grid-template-columns: repeat(4, 2fr);
+}
 
 .grid--center-v {
   align-items: center;
@@ -202,6 +203,7 @@ body {
 .btn--full:hover,
 .btn--full:active {
   background-color: #cf711f;
+
 }
 
 .btn--outline:link,
@@ -225,10 +227,11 @@ body {
   color: #fdf2e9;
   align-self: end;
   padding: 1.2rem;
+  cursor: pointer;
 }
 
 .btn--form:hover {
-  background-color: #fff;
+  background-color: #cf711f;
   color: #555;
 }
 
@@ -376,3 +379,4 @@ strong {
 .list-item{
   padding-top: 8px;
 }
+

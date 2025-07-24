@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!-- Always include this line of code!!! -->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
          href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
          rel="stylesheet"
@@ -19,9 +17,11 @@
       <link rel="stylesheet" href="/css/ushma/style.css" />
       <link rel="stylesheet" href="/css/ushma/queries.css" />
       <link rel="stylesheet" href="/css/ushma/vegas.min.css" />
+      
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
       <!-- <link rel="stylesheet" href="/css/earthkraft/user.css"> -->
       <link rel="stylesheet" href="/css/earthkraft/general.css">
+      <link rel="stylesheet" href="/css/earthkraft/lab.css">
       <script
          type="module"
          src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -32,40 +32,40 @@
          ></script>
          <link rel="icon" href="/images/logo.png">
       <title>Earth Kraft</title>
-   </head>
-    <body>
-      <div id="navbar" >
+</head>
+<body>
+     <div id="navbar" >
          <header class="header">
-            <a href="#">
+             <a href="#" style="display: flex; text-decoration: none; align-items: center; ">
             <img
                class="logo"
                alt="earthkraft logo"
                src="/images/logo.png"
-               />
+               /><span><h2 style="margin: 0; color: #545454; margin-left: 8px;">Earthkraft</h2></span>
             </a>
             
             <nav class="main-nav">
                <ul class="main-nav-list">
                   <li><a class="main-nav-link" href="/index.html">Home</a></li>
                   <li>
-                     <a class="main-nav-link" href="../pages/data_and_ai.html">Data & AI</a>
+                     <a class="main-nav-link" href="/Views/pages/data_and_ai.html">Data & AI</a>
                   </li>
                   <li><a class="main-nav-link" href="/Views/pages/erp.html">ERP</a></li>
-                  <li><a class="main-nav-link" href="#">Case Studies</a></li>
+                  <li><a class="main-nav-link" href="/Views/pages/casestudies.html">Case Studies</a></li>
                   <li><a class="main-nav-link" href="/index.html">About Us</a></li>
                   <li><a class="main-nav-link" href="/index.html">Contact Us</a></li>
-                 <li><a class="main-nav-link" href="/Views/pages/mobileapplication.html">Mobile Application</a></li>
+                  <li><a class="main-nav-link" href="/Views/pages/mobileapplication.html">Mobile Application</a></li>
                   <!-- <li><a class="main-nav-link nav-cta" href="#"></a></li> -->
                    <div class="navbar">
-                       <div class="profile-dropdown">
-                      <i class="fas fa-user-circle profile-icon"></i>
+                       <div class="profile-dropdown ">
+                    <i class="fas fa-user-circle profile-icon "></i>
                       <div class="dropdown-menu">
                      <a href="/Views/user/login.html" id="open-login">Login</a>
-                      <a href="/Views/user/login.html" id="open-register">Registration</a>
+                      <a href="/Views/user/registration.html" id="open-register">Registration</a>
                     </div>
                    </div>
                 </div>
-                 <div class="nav-icons">
+            <div class="nav-icons">
         <div class="dropdown">
           <button class="dropbtn">
          <ion-icon name="language-outline"></ion-icon>
@@ -84,169 +84,114 @@
             </button>
          </header>
          </div>
-
-
-                 
-<section class="container">
-    <section class="section-cta">
+         <main>
+          <section class="container">
+             <section class="section-cta">
         <div class="container center-text">
             <span class="subheading">Welcome to EarthKraft</span>
-            <h2 class="heading-secondary" style="color: #545454;">
-                Create New Account
-            </h2>
+            <!-- <h2 class="heading-secondary" style="color: #545454;">
+                Data & AI
+            </h2> -->
         </div>
-        <div class="container grid grid--2-cols margin-bottom-md" style="grid-gap:1fr">
+        <br><br>
 
-          <div class="meal backgrad">
-            <img  src="/images/general/login1.jpg" alt="">
-          </div>
-
-
-            <div class="meal backloggrad">
-                <div>
-                    <form class="cta-form-login" style="margin-top:2rem;" method="post">
-                        <div> <label for="username">Full Name</label>
-                            <input
-                                type="text"
-                                oncopy="return false"
-                                placeholder="Enter your name"
-                                autocomplete="off"
-                                onfocus="this.removeAttribute('readonly');"
-                                onpaste="return false"
-                                maxlength="50"
-                                value=""
-                                required
-                                autofocus
-                                name="username"
-                                id="username"
-                            />
-                        </div>
-                         <div> <label for="username">Email address</label>
-                            <input
-                                type="text"
-                                oncopy="return false"
-                                placeholder="Enter your email address"
-                                autocomplete="off"
-                                onfocus="this.removeAttribute('readonly');"
-                                onpaste="return false"
-                                maxlength="50"
-                                value=""
-                                required
-                                autofocus
-                                name="username"
-                                id="username"
-                            />
-                          </div>  
-                        <div>
-                            <label for="password"> Enter Password</label>
-                            <input type="password" autocomplete="off" placeholder="Password" onfocus="this.removeAttribute('readonly');" oncopy="return false" onpaste="return false" name="password" id="password" value="" />
-                        </div>
-                         <div>
-                            <label for="password"> Confirm Password</label>
-                            <input type="password" autocomplete="off" placeholder="Re-enter Password" onfocus="this.removeAttribute('readonly');" oncopy="return false" onpaste="return false" name="password" id="password" value="" />
-                        </div>
-                        <!-- Captcha
-                        <div>
-                            <img id="captcha_id" class="col-lg-8" name="imgCaptcha" src="/captcha.jpeg" />
-                            <a href="javascript:;" class="col-lg-2" title="change captcha text" onclick="document.getElementById('captcha_id').src = '/captcha.jpeg?' + Math.random();  return false">
-                                <i class="fa fa-refresh"></i>
-                            </a>
-                        </div> -->
-                        <!-- <div>
-                            <input
-                                autocomplete="off"
-                                placeholder="Enter Captcha"
-                                onfocus="this.removeAttribute('readonly');"
-                                class="form-control"
-                                maxlength="5"
-                                required
-                                onkeypress="return alpha(event)"
-                                oncopy="return false"
-                                onpaste="return false"
-                                id="captcha"
-                                name="captcha"
-                            />
-                        </div>
-                        <br /> -->
-                        <!-- Captcha Ends -->
-                        <div >
-                            <input type="submit" name="Login In" class="btn btn--form"></input>
-                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-                        </div>
-                        <p class="activate container"> Have an Account? <a href="/Views/user/login.html" style="color:#cf711f;">Login Your Account</a></p>
-                    </form>
-                </div>
+         <div class="erp-img">
+                <img src="/images/general/ERP.jpg" alt="">
+                <!-- <div class="erp-overlay">
+                <h2>ERP</h2>
+            </div> -->
             </div>
-
-
-        </div>
-
-
-    </section>
-</section>
-
-
-           <!-- <section class="section-cta">
-      <div class="container">
-         <div class="cta">
-            <div class="cta-text-box">
-               <h2 class="heading-secondary">Create account:</h2>
-               <form class="cta-form" action="#">
-                  <div  >
-                     <label for="name" >Full name</label>
-                     <input
-                        id="name"
-                        type="text"
-                        placeholder="John smith"
-                        required
-                        />
-                  </div>
-                  <div  >
-                     <label for="email" >Email address</label>
-                     <input
-                        id="email"
-                        type="email"
-                        placeholder="me@example.com"
-                       
-                        required
-                        />
-                  </div>
-      
-                  <div>
-                     <label for="password">Password</label>
-                     <input
-                        id="password"
-                        type="password"
-                        placeholder="Enter your password"
-                        required
-                        />
-                  </div>
-   
-                   <div>
-                     <label for="password"> Confirm Password</label>
-                     <input
-                        id="confirm-password"
-                        type="password"
-                        placeholder="Re-Enter your password"
-                        required
-                        />
-                  </div>
-                  
-                  <button class="btn btn--form">Register</button> -->
-                  <!-- <input type="checkbox" />
-                     <input type="number" /> -->
-             <!-- </form>
+           
+            <!-- <div class=" grid grid--2-cols margin-bottom-md grid-erp" style="grid-gap:4rem">
+            <div class="erp-img">
+                <img src="/images/general/ERP.jpg" alt="">
             </div>
-            <div
-               class="cta-img-box"
-               role="img"
-               aria-label="industry"
-               ></div>
-         </div>
-         </div> 
-         </section>  -->
+           
+       <div class="ai-dec">
+        <div class="container center-text">
+           <h2  style=" font-size:4rem;" class="feature-title">
+                ERP
+            </h2> 
+            <br>
+            <span class="subheading"> Enterprise Resource Planning</span>
+            </div>
+            <div class="head-txt">
+               <p class="feature-text" > Our Enterprise Resource Planning (ERP) solutions are designed to unify business processes across finance, operations, customer relations, and supply chains into a single, efficient platform. With a focus on scalability, data-driven decision-making, and process automation, EarthKraft empowers organizations to improve productivity, reduce operational costs, and adapt quickly to market changes. Whether you're a growing startup or a large enterprise, our customized ERP services ensure you have the tools to optimize workflows and accelerate digital transformation.</p>
+               <button type="submit" style="width: 100%; border-radius: 5px; background-color:#de9452;" class=" btn ">Learn More</button>
+            </div>
+       </div>
+       </div> -->
+
+        
+      <div class="ai-dec" style="margin-bottom: 2rem;">
+        <div class="container center-text">
+           <h2  style=" font-size:4rem;" class="feature-title">
+                ERP
+            </h2> 
+            <br>
+            <span class="subheading"> Enterprise Resource Planning</span>
+            </div>
+            <div class="head-txt">
+               <p class="feature-text" > Our Enterprise Resource Planning (ERP) solutions are designed to unify business processes across finance, operations, customer relations, and supply chains into a single, efficient platform. With a focus on scalability, data-driven decision-making, and process automation, EarthKraft empowers organizations to improve productivity, reduce operational costs, and adapt quickly to market changes. Whether you're a growing startup or a large enterprise, our customized ERP services ensure you have the tools to optimize workflows and accelerate digital transformation.</p>
+               <!-- <button type="submit" style="width: 100%; border-radius: 5px; background-color:#de9452;" class=" btn ">Learn More</button> -->
+            </div>
+       </div>
 
 
+       <div class=" grid grid--3-cols" style="grid-gap:4rem">
+        <div class="data_ai" >
+        <div class="data_left">
+            <ion-icon class="data-icon" name="bar-chart-outline"></ion-icon>
+           <h2  style=" font-size:3rem;" class="feature-title">
+              Microsoft Dynamics 365
+               <!-- Centralize & Govern Your Core Business Data -->
+            </h2> 
+            </div>
+             <div class="ai-txt">
+               <p class="feature-text" > Streamline your finance, operations, sales, and service departments with Microsoft’s unified ERP & CRM platform.</p>
+            </div>
+       </div>
+       <div class="data_ai" >
+        <div class="data_left">
+            <ion-icon class="data-icon" name="bar-chart-outline"></ion-icon>
+           <h2  style=" font-size:3rem;" class="feature-title">
+              Power BI
+               <!-- Centralize & Govern Your Core Business Data -->
+            </h2> 
+            </div>
+             <div class="ai-txt">
+               <p class="feature-text" > Turn your raw data into rich visuals with interactive dashboards and business intelligence for smarter decisions.</p>
+            </div>
+       </div>
+       <div class="data_ai" >
+        <div class="data_left">
+            <ion-icon class="data-icon" name="bar-chart-outline"></ion-icon>
+           <h2  style=" font-size:3rem;" class="feature-title">
+              Implementation Services
+               <!-- Centralize & Govern Your Core Business Data -->
+            </h2> 
+            </div>
+             <div class="ai-txt">
+               <p class="feature-text" > EarthKraft ensures seamless ERP implementation—from planning to deployment—on time and within your budget.</p>
+            </div>
+       </div>
+       <div class="data_ai" >
+        <div class="data_left">
+            <ion-icon class="data-icon" name="bar-chart-outline"></ion-icon>
+           <h2  style=" font-size:3rem;" class="feature-title">
+              Competency & Experience
+               <!-- Centralize & Govern Your Core Business Data -->
+            </h2> 
+            </div>
+             <div class="ai-txt">
+               <p class="feature-text" > With years of successful ERP deployments, EarthKraft brings the technical expertise and domain knowledge your business needs.</p>
+            </div>
+       </div>
+  </div>
+   </section>
+   </section>
+     </main>
+         <!-- style="position: absolute; bottom: 0; left: 0; width: 100%; -->
   <div id="footer">
 <footer class="footer" >
             <div class="footer-head">
@@ -362,7 +307,6 @@
       <script src="/js/ushma/vegas.min.js"></script>
       <script src="/js/ushma/script.js"></script>
   <script src="/js/earthkraft/user.js"></script>
+    
 </body>
-</html>
-
 </html>
