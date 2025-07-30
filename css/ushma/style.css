@@ -1385,4 +1385,67 @@ transform: translateY(-1.2rem);
 
 }
 
+/* aboutus page styling */
 
+.about-cnt{
+  margin: 4.8rem 12.8rem 4.8rem 12.8rem;
+  display: flex;
+  justify-self:centerl;
+  flex-direction: column;
+}
+
+.about-hd{
+  font-size: 24px;
+  padding-bottom: 2.5rem;
+}
+.about-hd hr{
+  width:16rem;
+  height: 0.5rem;
+  background-color: rgb(39, 39, 90);
+}
+
+.about-card
+{
+  display: flex;
+    align-items: center;
+    border: 0.5px solid rgb(23, 23, 42);
+    /* margin: 2rem; */
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    /* padding: 2rem; */
+    border-radius: 5px;
+    transition: all 0.4s;
+    cursor: pointer;
+    flex-direction: column;
+    background: url(/images/general/abt-bg.jpg);
+    background-color: #cf711f;
+} 
+
+.abt-hd{
+  color: whitesmoke;
+  margin-top: 20px;
+  font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    min-height: 50px;
+    /* background: url(/images/general/abt-bg.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+    transition: background 1s;
+}
+.abt-info{
+  color: whitesmoke;
+  padding: 0px 20px 20px;
+}
+.abt-link{
+  color: skyblue;
+  font-size: 15px;
+  padding: 20px;
+    width: 100%;
+    margin-top: auto;
+
+}
+.about-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);                                                                                                                       
+ background-image: linear-gradient(to right bottom, #020102, #052659);
+}
