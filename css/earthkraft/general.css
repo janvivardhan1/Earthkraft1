@@ -64,11 +64,11 @@
   /* login and registration icon */
 .navbar {
   background-color: #d7702c;
-  padding: 0.8rem 1.8rem;
+  padding: 0.8rem 0.8rem;
   display: flex;
   justify-content: flex-end;
   position: relative;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 .navbar:hover{
     border: #d8a370 3px solid;

@@ -293,6 +293,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  color: #333;
 }
 
 .meal-attribute {
@@ -303,9 +304,10 @@
 }
 
 .meal-icon {
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 24px;
+  width: 24px;
   color: #e67e22;
+ 
 }
 
 .meal-img {
@@ -509,8 +511,8 @@
   /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-
-  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  background-color: #ffd9b3;
+  /* background-image: linear-gradient(to right bottom, #eb984e, #d89051); */
   overflow: hidden;
 }
 
@@ -532,15 +534,17 @@
 }
 
 .cta-img-box {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(235, 151, 78, 0.35),
-      rgba(230, 125, 34, 0.35)
-    ),
+  background-image: 
     url("/images/earthslider/s1.png");
   background-size: cover;
   background-position: center;
 }
+
+/* linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ), */
 
 .cta-form {
   display: grid;
@@ -593,7 +597,7 @@
 
 .grid--footer {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  /* color: white; */
+  color: whitesmoke;
 }
 .footer-head{
   /* background-image: url(/images/earthslider/footer.jpg); */
@@ -603,6 +607,7 @@
   padding: 40px 20px;
  backdrop-filter: blur(10px);
   text-align: center;
+  background-color: #232121;
 } 
 .logo-col {
   display: flex;
@@ -655,12 +660,13 @@
   gap: 2.4rem;
 }
 
+
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  /* color:#fff; */
-  color: #767676; 
+  color:whitesmoke;
+  /* color: #767676;  */
   transition: all 0.3s;
 }
 
@@ -1104,7 +1110,10 @@ font-weight: 500;
     background-color: #fdf2e9;
   }
   .about-us{
-    padding-bottom: 12.8rem;
+    padding: 2rem;
+    margin-bottom: 10.8rem;
+    background: #f9f9f9;
+  
   }
 
   /* data and ai */
@@ -1290,13 +1299,19 @@ transform: translateY(-1.2rem);
   }
 
   .erp-img img,.mob-img img{
-    width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
   }
 
   /* erp styling */
+  .erp-header img{
+   width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
   .data_erp{
     display: flex;
     align-items: center;
@@ -1369,3 +1384,5 @@ transform: translateY(-1.2rem);
    font-size: 60px;
 
 }
+
+
