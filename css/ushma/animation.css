@@ -1,0 +1,31 @@
+ .about-card,.erp-header img{
+    transition: transform 0.5s ease-in-out;
+    animation: zoomIn 1.2s ease;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* .erp-header img{
+ animation: slideFadeTopLeft 1s ease forwards;
+} */
+
+@keyframes slideFadeTopLeft {
+  0% {
+    opacity: 0;
+     transform: translate(-40px, -30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+.abt-hd , .abt-txt, .abt-link {
+    animation: slideFadeTopLeft 1s ease forwards;
+}
